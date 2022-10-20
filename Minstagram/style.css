@@ -27,6 +27,7 @@
 .topbar nav a {
     text-decoration: none;
     display: block;
+    margin-left: 10px;
 }
 
 .cards {
@@ -41,6 +42,8 @@
     color: #5f4a4a;
     border-radius: 10px;
     width: 1fr;
+    min-width: 280px;
+    max-width: 300px;
     background-color: #fff;
     display: grid;
     margin-bottom: 16px;
@@ -82,4 +85,3 @@
 input {
     text-align: center;
 }
-
