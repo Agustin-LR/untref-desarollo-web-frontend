@@ -5,9 +5,18 @@
 
 }
 
-.topbar {
+body {
     display: flex;
-    justify-content: space-between;
+}
+
+main {
+    display: flex;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     align-items: center;
     border-bottom: 1px solid #000;
     background-color:rgba(0, 0, 0, 0.19);
@@ -15,26 +24,33 @@
     top: 0px;
 }
 
-.topbar input {
+.sidebar input {
     max-height: 20px;
 }
 
-.topbar nav {
+.sidebar {
     display: flex;
+    flex-direction: column;
+    align-items: baseline;
     text-decoration: none;
 }
 
-.topbar nav a {
+.sidebar nav a {
     text-decoration: none;
     display: block;
     margin-left: 10px;
     margin-left: 10px;
 }
 
-.cards {
-    justify-content: center;
+.cards-container {
     display: flex;
     flex-wrap: wrap;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 16px;
     padding: 8px;
 }
@@ -42,7 +58,7 @@
 .card {
     color: #5f4a4a;
     border-radius: 10px;
-    width: 1fr;
+    width: 300px;
     background-color: #fff;
     display: grid;
     margin-bottom: 16px;
@@ -63,7 +79,9 @@
 
 .card .middle {
     display: flex;
+    flex-direction: column-reverse;
     justify-content: space-between;
+    margin-bottom: 15px;
 }
 
 .card .bottom h2 {
@@ -81,10 +99,28 @@
     line-height: 1.3;
 }
 
-input {
-    text-align: center;
+aside {
+    /* problema 1: no es responsive (no se ajusta cuando ajusto ventana) */
+    /* problema 2: los elementos no se acomodan 1 abajo del otro, ahora esta forzado por
+    el largo del usuario y el ancho puesto a mano (cambiar min-width para entender de que hablo */
+    display: flex;
+    flex-direction: column;
 }
 
+.sugerencias {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.sugerencias a {
+    margin-bottom: 5px;
+}
+
+.perfil h4 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
 
 @media (max-width: 576px) {
 
