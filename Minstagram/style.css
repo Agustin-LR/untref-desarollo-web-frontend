@@ -85,3 +85,29 @@
 input {
     text-align: center;
 }
+
+
+
+@media (max-width: 576px) {
+
+}
+
+@media (min-width: 576px) and (max-width: 761px) {
+
+}
+
+@media (min-width: 762px) and (max-width: 991px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+}
+
+@media (min-width: 1400px) {
+
+}
