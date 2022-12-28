@@ -2,7 +2,6 @@
     box-sizing: boder-box;
     margin: 0px;
     padding: 0px;
-
 }
 
 body {
@@ -27,13 +26,13 @@ main {
 .sidebar input {
     max-height: 20px;
 }
-
+/*
 .sidebar {
     display: flex;
     flex-direction: column;
     align-items: baseline;
     text-decoration: none;
-}
+} */
 
 .sidebar nav a {
     text-decoration: none;
@@ -122,26 +121,20 @@ aside {
     margin-bottom: 10px;
 }
 
-@media (max-width: 576px) {
-
+@media (max-width: 320px) {
+    .cards-container {
+        column-count: 1;
+    }
 }
 
-@media (min-width: 576px) and (max-width: 761px) {
-
+@media (min-width: 321px) and (max-width: 768px) {
+    .cards-container {
+        column-count: 2;
+    }
 }
 
-@media (min-width: 762px) and (max-width: 991px) {
-
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-
-}
-
-@media (min-width: 1200px) and (max-width: 1399px) {
-
-}
-
-@media (min-width: 1400px) {
-
+@media (min-width: 769px) and (max-width: 1024px) {
+    .cards-container {
+        column-count: 3;
+    }
 }
